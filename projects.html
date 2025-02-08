@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+     <!-- Navbar -->
+     <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a class="nav-logo" href="index.html">Sami Harun</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Påskägg 1 - Klickbart element -->
+    <div class="hidden-clickable" onclick="changeBackground()">
+        Klicka här för ett påskägg!
+    </div>
+
+    <!-- Påskägg 2 - Tangentbords Kombinationspåskägg -->
+    <div class="modal-toggle" id="modal-toggle"></div>
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <p>Du hittade ett gömt påskägg!</p>
+        </div>
+    </div>
+
+
+    <section id="projects" class="section dark">
+        <div class="section-container">
+            <h2>Projects</h2>
+            <div class="projects">
+                <!-- Project 1 -->
+                <div class="project">
+                    <img src="https://cdn.pixabay.com/photo/2017/09/08/20/29/chess-2730034_1280.jpg" alt="Chessboard">
+                    <h3>Chessboard</h3>
+                    <p>A console app to generate a customizable chessboard.</p>
+                    <a href="https://github.com/samiharun1/ChessBoard-Sami-Harun" target="_blank" class="button">GitHub</a>
+                    <!-- Modal trigger -->
+                    <label for="modal1" class="info-btn">More Info</label>
+    
+                    <!-- Modal  -->
+                    <input type="checkbox" id="modal1" class="modal-toggle">
+                    <div class="modal">
+                        <div class="modal-content">
+                            <label for="modal1" class="close-btn">&times;</label>
+                            <h3>More about Chessboard</h3>
+                            <p>This project generates a customizable chessboard where users can adjust the size and board elements.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Project 2 -->
+                <div class="project">
+                    <img src="https://cdn.pixabay.com/photo/2022/11/02/19/24/hotel-7565884_1280.jpg">
+                    <h3>Hotel Booking</h3>
+                    <p>A program to manage hotel reservations and bookings.</p>
+                    <a href="https://github.com/samiharun1/Hotelbooking" target="_blank" class="button">GitHub</a>
+                    <!-- Modal trigger -->
+                    <label for="modal2" class="info-btn">More Info</label>
+    
+                    <!-- Modal  -->
+                    <input type="checkbox" id="modal2" class="modal-toggle">
+                    <div class="modal">
+                        <div class="modal-content">
+                            <label for="modal2" class="close-btn">&times;</label>
+                            <h3>More about Hotel Booking</h3>
+                            <p>This program helps users manage hotel reservations, track available rooms, and streamline booking processes.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Project 3 -->
+                <div class="project">
+                    <img src="https://cdn.pixabay.com/photo/2015/09/09/20/54/book-933280_1280.jpg">
+                    <h3>School Management System</h3>
+                    <p>A database-driven app for school management.</p>
+                    <a href="https://github.com/samiharun1/SamiHarun_NET24_Databaser_Indivudellprojekt_Master1" target="_blank" class="button">GitHub</a>
+                    <!-- Modal trigger -->
+                    <label for="modal3" class="info-btn">More Info</label>
+    
+                    <!-- Modal -->
+                    <input type="checkbox" id="modal3" class="modal-toggle">
+                    <div class="modal">
+                        <div class="modal-content">
+                            <label for="modal3" class="close-btn">&times;</label>
+                            <h3>More about School Management System</h3>
+                            <p>A powerful tool for managing school databases, student records, classes, and teachers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+   
+                
+                <script src="script.js"></script>
+
+</body>
+</html><section

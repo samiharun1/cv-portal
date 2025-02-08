@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+
+    <title>Document</title>
+</head>
+<body>
+  
+  <!-- Navbar -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+        <a class="nav-logo" href="index.html">Sami Harun</a>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cv.html">CV</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<header id="home" class="hero" style="background-image: url('/p/pexels-pixabay-355747.jpg');">
+    <div class="hero-content">
+        <h1>Hi, I'm Sami Harun</h1>
+        <p>A Fullstack .NET Developer</p>
+        <a href="#projects" class="button">View My Work</a>
+    </div>
+</header>
+
+<!-- About Section -->
+<section id="about" class="section">
+    <div class="section-container">
+        <h2>About Me</h2>
+        <p>I am a passionate full-stack .NET developer who loves problem-solving and building meaningful projects. I am eager to learn new technologies and improve my skills.</p>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="section dark">
+    <div class="section-container">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project">
+                <img src="https://cdn.pixabay.com/photo/2017/09/08/20/29/chess-2730034_1280.jpg" alt="Chessboard">
+                <h3>Chessboard</h3>
+                <p>A console app to generate a customizable chessboard.</p>
+                <a href="https://github.com/samiharun1/ChessBoard-Sami-Harun" target="_blank" class="button">GitHub</a>
+            </div>
+
+            <div class="project">
+                <img src="https://cdn.pixabay.com/photo/2022/11/02/19/24/hotel-7565884_1280.jpg">
+                <h3>Hotel Booking</h3>
+                <p>A program to manage hotel reservations and bookings.</p>
+                <a href="https://github.com/samiharun1/Hotelbooking" target="_blank" class="button">GitHub</a>
+            </div>
+            
+            <div class="project">
+                <img src="https://cdn.pixabay.com/photo/2015/09/09/20/54/book-933280_1280.jpg">
+                <h3>School Management System</h3>
+                <p>A database-driven app for school management.</p>
+                <a href="https://github.com/samiharun1/SamiHarun_NET24_Databaser_Indivudellprojekt_Master1" target="_blank" class="button">GitHub</a>
+            </div>
+
+            <!-- CV Section -->
+            <section id="CV" class="section">
+                <img class="cv-img" src="https://cdn.pixabay.com/photo/2022/06/03/04/21/application-7239370_640.jpg" alt="CV Image">
+                <div class="section-container">
+                    <h2>My CV</h2>
+                    <p>Take a look at my professional experience, education, and skills in detail. You can download my CV below.</p>
+                    <a href="path/to/your-cv.pdf" target="_blank" class="button">Download My CV</a>
+                </div>
+            </section>              
+
+            <div class="contact-form">
+                <span class="heading">Contact Us</span>
+                <form>
+                  <label for="name">Name:</label>
+                  <input type="text" required="">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required="">
+                  <label for="message">Message:</label>
+                  <textarea id="message" name="message" required=""></textarea>
+                  <button type="submit">Submit</button>
+                </form>
+              </div>
+
+             
+            
+   
+
+              <script src="script.js"></script>
+
+
+
+    
+</body>
+</html>

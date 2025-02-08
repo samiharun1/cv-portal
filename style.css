@@ -1,0 +1,495 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(0, 0, 0); 
+    margin: 0; /*tar bort allt mellanrum*/
+    padding: 0; /*tar bort allt mellanrum*/
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+}
+/*texten där det står sami*/
+a{
+    text-decoration: none; /*tar bort underlinje*/
+    color: rgb(249, 246, 246);  /*färg på texten*/
+}
+
+/*navigerins meny*/
+.navbar{
+    background-color: rgb(0, 0, 0); /*bakgrundsfärg*/
+    color: rgb(0, 0, 0); /*färg på texten*/
+    display: flex; /*flexbox*/
+    justify-content: space-between; /*mellanrum mellan elementen*/
+    align-items: center; /*centrerar elementen*/
+    padding: 1rem 2rem; /*mellanrum på sidorna*/
+    position: fixed; /*fixerad position*/
+    width: 100%; /*bredden på sidan*/
+    top: 0%; /*avstånd från toppen*/
+    z-index: 1000; /*hur högt elementet ska vara*/
+}
+
+.navbar-container{
+    display: flex; /*flexbox*/
+    justify-content: space-between; /*mellanrum mellan elementen*/
+    width: 90%; /*bredden på sidan*/
+}
+
+.navbar-logo{
+    font-size: bold; /*fet text*/
+    color: rgb(251, 251, 251); /*färg på texten*/
+}
+
+
+.nav-links {
+    list-style: none; /*tar bort punkterna*/ 
+    display: flex; /*flexbox*/
+    gap: 1.5rem; /*mellanrum mellan elementen*/
+    margin: 0%; /*tar bort allt mellanrum*/
+    padding:0%; /*tar bort allt mellanrum*/
+}
+
+.nav-links a{
+    color: rgb(251, 251, 251); /*färg på texten*/ 
+    font-size: 1rem; /*storlek på texten*/
+}
+
+.nav-links a:hover{
+    color: rgb(251, 251, 251); /*färg på texten*/
+}
+
+/* bakgrundsbild*/
+.hero {
+    background: url('/p/pexels-pixabay-355747.jpg') no-repeat center center; 
+    background-size: cover; /*storlek på bilden*/
+    color: rgb(0, 0, 0); /*färg på texten*/
+    height: 100vh; /*höjden på bilden*/
+    display: flex; /*flexbox*/
+    flex-direction: column; /*elementen i kolumn*/
+    align-items: center; /*centrerar elementen*/
+    justify-content: center; /*centrerar elementen*/
+    text-align: center; /*centrerar texten*/
+    padding: 0%; /*tar bort allt mellanrum*/
+}
+
+.hero h1{
+    font-size: 3rem; /*storlek på texten*/
+    margin: 0%; /*tar bort allt mellanrum*/
+    padding: 0%; /*tar bort allt mellanrum*/
+}
+
+.hero p{
+    font-size: 1.5rem; /*storlek på texten*/
+    margin: 0%; /*tar bort allt mellanrum*/
+    padding: 0%; /*tar bort allt mellanrum*/
+}
+
+.button{
+    background-color: rgb(155, 120, 251); 
+    color: rgb(251, 251, 251);
+    padding: o.75rem 1.5rem; /* tar bort allt mellanrum*/
+    border: none;  /*tar bort ramen*/
+    border-radius: 5px; /*rundar av hörnen*/
+    font-size: 1rem; /*storlek på texten*/
+    cursor: pointer;  /*pekar på knappen*/
+    text-transform: uppercase;/* stora bokstäver*/  
+}
+
+.button:hover{
+    background-color: rgb(251, 251, 251);  /*färg på knappen*/   
+}
+
+/*sectionen om mig*/
+section{
+    padding: 3rem 1rem; /*mellanrum på sidorna*/
+    text-align: center; /*centrerar texten*/
+}
+
+.section.dark{ /*bakgrundsfärg*/
+    background-color: rgb(0, 0, 0); 
+    color: rgb(251, 251, 251);
+}
+
+.section h2{
+    font-size: 2rem; /*storlek på texten*/
+    margin-bottom: 1rem; /*mellanrum*/
+}
+
+.section p{
+    font-size: 1.25rem; /*storlek på texten*/
+    margin-bottom: 1rem; /*mellanrum*/
+}
+
+
+
+/*projekt delen*/
+.projects{
+    display: flex; /*flexbox*/
+    gap: 1.5rem; /*mellanrum mellan elementen*/
+    flex-wrap: wrap; /*elementen i rad*/
+    justify-content: center; /*centrerar elementen*/
+}
+
+.project{
+    background-color: rgb(255, 255, 255); /*bakgrundsfärg*/
+    color: rgb(8, 8, 8); /*färg på texten*/
+    padding: 1rem; /*mellanrum*/
+    border: 1px solid #181818;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+    width: 300px;
+    border-radius: 5px;
+}
+
+.project:hover{
+    transform: scale(1.05); /*förstorar bilden*/
+
+}
+
+.project h3{
+    color: rgb(8, 8, 8); /*färg på texten*/
+    margin-bottom: 1rem; /*mellanrum*/
+    
+}
+
+.project p{
+    margin-bottom: 1rem; /*mellanrum*/
+    
+}
+
+/*kontat form */
+
+.contact-form {
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+  }
+  
+  .contact-form label {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+  }
+  
+  .contact-form .heading {
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    ;
+    margin-bottom: 12px;
+    font-weight: bold;
+    display: block;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form label {
+    margin-bottom: 10px;
+  }
+  
+  textarea {
+    resize: none;
+    height: 80px;
+    
+  }
+  
+  .contact-form input, .contact-form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form input:focus, .contact-form textarea:focus {
+    outline: none;
+    box-shadow: 0 0 5px #000000;
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .contact-form button[type="submit"] {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .contact-form button[type="submit"]:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+
+/*media queries*/
+.project img{
+    width: 100%; /*bredden på bilden*/
+    height: auto; /*höjden på bilden*/
+    border-radius: 10px; /*rundar av hörnen*/
+    margin-top: 1rem; /*mellanrum*/
+    object-fit: cover; /*storlek på bilden*/
+    
+}
+
+.CV{
+    padding: 3rem 1rem; /*mellanrum på sidorna*/
+    background-color: rgb(37, 8, 8);
+    text-align: center; /*centrerar texten*/
+    display: flex; /*flexbox*/
+    flex-direction: column; /*elementen i kolumn*/
+    justify-content: center;
+    align-items: center; /*centrerar elementen*/    
+}
+
+.CV h2{
+    font-size: 1rem; /*storlek på texten*/
+    margin-bottom: 2rem; /*mellanrum*/
+
+}
+
+.CV p{
+    font-size: 1rem; /*storlek på texten*/
+    margin-bottom: 2rem; /*mellanrum*/
+}
+
+.CV.button{
+    background-color: rgb(155, 120, 251); /*bakgrundsfärg*/
+    color: rgb(251, 251, 251); /*färg på texten*/
+    padding: 0.75rem 1.5rem; /*mellanrum*/
+    border: none; /*tar bort ramen*/
+    border-radius: 5px; /*rundar av hörnen*/
+    cursor: pointer; /*pekar på knappen*/
+    text-transform: uppercase; /*stora bokstäver*/
+    text-decoration: none; /*tar bort underlinje*/
+
+}
+
+.CV.button:hover{
+    background-color: rgb(251, 251, 251); /*färg på knappen*/
+    color: rgb(8, 8, 8); /*färg på texten*/
+    transition: ease-in;
+}
+
+.CV img{
+    width: 100%; /*bredden på bilden*/
+    height: auto; /*höjden på bilden*/
+    border-radius: 5px; /*rundar av hörnen*/
+    margin-top: 1rem; /*mellanrum*/
+    object-fit: cover; /*storlek på bilden*/
+    
+}
+
+.cv-img{
+    background-color: rgb(255, 255, 255); /*bakgrundsfärg*/
+    color: rgb(0, 0, 0); /*färg på texten*/
+    padding: 1rem; /*mellanrum*/
+    border: 1px solid #181818;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+    width: 300px;
+    border-radius: 5px;
+}
+
+.img-about{
+   max-width: 100%; /*bredden på bilden*/
+    height: auto; /*höjden på bilden*/
+    border-radius: 5px; /*rundar av hörnen*/
+    margin-top: 1rem; /*mellanrum*/
+    object-fit: cover; /*storlek på bilden*/
+    align-items: center;
+}
+
+.nav-links a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Modal */
+
+.hidden-clickable {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.6); /* Lite genomskinlig bakgrund */
+    padding: 20px;
+    cursor: pointer;
+    text-align: center;
+    border: 2px dashed #00ff00; /* Dasha kant för att synas tydligt */
+    z-index: 1000;
+}
+
+.modal-toggle {
+    display: none; /* Döljer checkboxen */
+}
+
+.modal {
+    display: none; /* Modal är inte synlig när checkboxen inte är ikryssad */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Bakgrund genomskinlig */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.modal-content {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 500px;
+    width: 80%;
+    text-align: center;
+}
+
+/* Visa modalen när checkboxen är ikryssad */
+.modal-toggle:checked + .modal {
+    display: flex;
+}
+
+.close-btn {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.info-btn {
+    background-color: rgb(155, 120, 251); 
+    color: rgb(255, 255, 255);
+    padding: o.75rem 1.5rem; /* tar bort allt mellanrum*/
+    border: none;  /*tar bort ramen*/
+    border-radius: 5px; /*rundar av hörnen*/
+    font-size: 1rem; /*storlek på texten*/
+    cursor: pointer;  /*pekar på knappen*/
+    text-transform: uppercase;/* stora bokstäver*/
+    cursor: pointer;
+}
+
+
+
+/* Modal (för andra påskägget) */
+.modal {
+    display: none; /* Döljer modalen initialt */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Bakgrund genomskinlig */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.close-btn {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Grunder för body */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+}
+
+/* Påskägg 1 - Klickbart område */
+.hidden-clickable {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    cursor: pointer;
+    text-align: center;
+    border: 3px dashed #00ff00;
+    z-index: 1000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.hidden-clickable:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.modal-content {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 500px;
+    width: 80%;
+    text-align: center;
+}
+
+.close-btn {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    cursor: pointer;
+}
